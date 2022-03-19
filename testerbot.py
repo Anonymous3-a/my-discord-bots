@@ -62,4 +62,4 @@ async def on_message(message):
     if msg.startswith("$add"):
         await message.channel.send("Please DM my creator, sc29#5942 if you want to add something.\nPS. May I reccomend my friend, CommunityBot? To add them, ask the admin to add them. The link is: https://tinyurl.com/commubot")
 
-client.run("NzU0NDkzMzU1MjIzODEwMDc4.X11isQ.OqHa3f7QDw7IGd_bBGHOEaFBmeM")
+client.run("No stealies")
