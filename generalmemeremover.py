@@ -13,5 +13,4 @@ async def on_message(message):
 		if message.content.endswith(ext):
 			await client.delete_message(message)
 
-client.run("OTU2NjAzODE0MTg4ODE4NDcz.Yjyoug.Mll1tXEUb8y3VgHhLh4aW6SsM6M")
-
+client.run("Gotta remember to censor those tokens")
