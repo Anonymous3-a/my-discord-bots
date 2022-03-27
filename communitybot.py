@@ -16,4 +16,10 @@ async def on_message(message):
     if msg.startswith('$hello'):
         await message.channel.send("World!")
 
-client.run("Not getting my tokens")
+    if msg.startswith('$ping'):
+        await message.channel.send("Pong!")
+
+    if msg.startswith('$help'):
+        await message.channel.send("$hello - Hello World\n$ping - Pong\n$help - This message")
+
+client.run("token")
