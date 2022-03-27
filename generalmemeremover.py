@@ -8,9 +8,9 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-	pic_ext = ['.jpg','.png','.jpeg']
-	for ext in pic_ext:
-		if message.content.endswith(ext):
-			await client.delete_message(message)
+	# If the message contains an attachment and it is in #general, delete it
+	if message.attachments and message.channel.name == 'general':
+		await message.delete()
+		await message.channel.send("Deleted attachment in #general (I hope it was a meme)")
 
-client.run("Gotta remember to censor those tokens")
+client.run("Token")
