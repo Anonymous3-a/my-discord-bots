@@ -1,6 +1,7 @@
 import discord
 
-client = discord.Client()
+intents = discord.Intents.none() # Replace none with whatever you need
+client = discord.Client(intents)
 
 @client.event
 async def on_ready():
